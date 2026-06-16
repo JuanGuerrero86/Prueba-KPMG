@@ -1,0 +1,26 @@
+export const ERROR_CODES = {
+  AUTH_001: 'AUTH-001',
+  AUTH_002: 'AUTH-002',
+  AUTH_003: 'AUTH-003',
+  AUTH_004: 'AUTH-004',
+  AUTH_005: 'AUTH-005',
+  AUTH_006: 'AUTH-006',
+  AUTH_007: 'AUTH-007',
+  USER_001: 'USER-001',
+  USER_002: 'USER-002',
+  USER_003: 'USER-003',
+  USER_004: 'USER-004',
+  TKT_001: 'TKT-001',
+  TKT_002: 'TKT-002',
+  TKT_003: 'TKT-003',
+  TKT_004: 'TKT-004',
+  TKT_005: 'TKT-005',
+  HIST_001: 'HIST-001',
+  HIST_002: 'HIST-002',
+  VAL_001: 'VAL-001',
+  SYS_001: 'SYS-001',
+  SYS_002: 'SYS-002',
+  SYS_003: 'SYS-003',
+} as const;
+
+export type ErrorCode = (typeof ERROR_CODES)[keyof typeof ERROR_CODES];
